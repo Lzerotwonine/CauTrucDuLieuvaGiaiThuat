@@ -3,7 +3,7 @@
 // 2.2.  Hãy cài đặt hàm đệ quy tính T(n) = n! = 1 x 2 x 3 x … x n. Trong đó T(0) = 1
 
 int GiaiThua(int n) {
-	if (n == 1)
+	if (n == 1 | n == 0)
 		return 1;
 	else
 	return n*GiaiThua(n - 1);
