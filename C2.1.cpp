@@ -2,15 +2,19 @@
 
 // 2.1 Tính S(n) = 1 + 2 + 3 + … + n
 
+int GiaiThua(int n) {
+	if (n == 1)
+		return 1;
+	else
+	return n + GiaiThua(n - 1);
+}
+
 int main() {
-	int n, i, s;
+	int n, GT;
 	
 	printf("Nhap n: ");
 	scanf("%d", &n);
 	
-	s = 0;
-	for (i = 1; i <= n; i++)
-		s = s + i;
-	
-	printf("1 + 2 + ... + %d = %d", n, s);
+	GT = GiaiThua(n);
+	printf("1 + 2 + ... + %d = %d", n, GT);
 }
