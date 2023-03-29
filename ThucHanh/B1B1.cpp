@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-// 2.3.  Cho mảng một chiều các số nguyên. Viết hàm tính tổng các số chẵn trong mảng bằng phương pháp đệ quy
+// B1Buoi1.  Cho mảng một chiều các số nguyên. Viết hàm tính tổng các số chẵn trong mảng bằng phương pháp đệ quy
 
 int TongChan(int a[], int n) {
 	if (n == 1) {
