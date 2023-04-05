@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define n = 1000
 
+//Nguồn: https://www.youtube.com/watch?v=G8WQPxh1PpM
+
 void NhapMang(int a[], int &n) {
 	do {
 		printf("Nhap so luong phan tu n: ");
