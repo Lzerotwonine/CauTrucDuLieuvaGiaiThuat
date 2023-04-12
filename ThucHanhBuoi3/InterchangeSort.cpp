@@ -30,6 +30,6 @@ int main() {
    	int a[] = { 41, 23, 4, 14, 56, 1 };
    	int n = sizeof(a) / sizeof(a[0]);
    	int x = 10;
-   	int result = interchangeSort(a, n);
+   	interchangeSort(a, n);
 	XuatMang(a, n);
 }
