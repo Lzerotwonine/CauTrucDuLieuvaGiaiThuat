@@ -68,30 +68,15 @@ void Output (STACK s) {
 int main() {
 	STACK s;
 	Khoitao(s);
-	int luachon;
-	while (1) {
-		printf("\n1. Push\n");
-		printf("2. Pop\n");
-		printf("3. Xuat danh sach\n");
-		printf("4. Thoat\n");
-		printf("Chon chuc nang: ");
-		scanf("%d", &luachon);
 	
-		if (luachon == 1) {
-			int n;
-				printf("\nNhap so luong can nhap: ");
-				scanf("%d", &n);
-				Input(s, n);
-		} 		
-		else if (luachon == 2) {
-			Pop(s);
-		}
-		else if (luachon == 3) {
-				printf("\nDanh sach phan tu trong stack\n"); 
-				Output(s);
-		}
-		else {
-			break;
-		}
-	}
+	int n;
+	printf("\nNhap so luong can nhap: ");
+	scanf("%d", &n);
+	Input(s, n);
+	
+	printf("\nDa xoa %d ra khoi stack!\n", s.S[s.top]);
+	Pop(s); 
+	
+	printf("\nDanh sach phan tu trong stack:\n"); 
+	Output(s);
 }
