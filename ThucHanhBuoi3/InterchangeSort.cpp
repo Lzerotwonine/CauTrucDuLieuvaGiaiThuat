@@ -19,16 +19,17 @@ int interchangeSort(int a[], int n) {
 		}
 }
 
+void XuatMang(int a[], int n) {
+	printf("Noi dung cua mang la: ");
+	for (int i = 0; i < n; i++)
+	printf("%d ", a[i]);
+	printf("\n");
+}
+
 int main() {
-   int a[] = { 2, 3, 4, 10, 40 };
-   int n = sizeof(a) / sizeof(a[0]);
-   int x = 10;
-   int result = interchangeSort(a, n);
-
-   if (result == -1)
-      printf("Khong tim thay %d trong mang", x);
-   else
-      printf("%d co trong mang, o vi tri %d", x, result);
-
-   return 0;
+   	int a[] = { 41, 23, 4, 14, 56, 1 };
+   	int n = sizeof(a) / sizeof(a[0]);
+   	int x = 10;
+   	int result = interchangeSort(a, n);
+	XuatMang(a, n);
 }
