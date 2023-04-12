@@ -29,7 +29,6 @@ void XuatMang(int a[], int n) {
 int main() {
    	int a[] = { 41, 23, 4, 14, 56, 1 };
    	int n = sizeof(a) / sizeof(a[0]);
-   	int x = 10;
    	interchangeSort(a, n);
 	XuatMang(a, n);
 }
